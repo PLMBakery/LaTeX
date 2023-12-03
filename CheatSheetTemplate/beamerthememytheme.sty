@@ -1,0 +1,45 @@
+% beamerthememytheme.sty
+\ProvidesPackage{beamerthememytheme}[2023/12/03 My custom beamer theme]
+
+% ====================
+% Abhängigkeiten
+% ====================
+\RequirePackage{beamerthemedefault}
+\RequirePackage{beamercolorthemedefault}
+
+% ====================
+% Designkonfigurationen
+% ====================
+
+% Definieren Sie Ihre eigenen Farben, Schriftarten und Designelemente hier
+% Beispiel: Definieren einer neuen Farbe für den Titel
+\definecolor{mythemecolor}{RGB}{100, 150, 200}
+\setbeamercolor{title}{fg=mythemecolor}
+
+% ====================
+% Fußzeilen- und Kopfzeilenkonfiguration
+% ====================
+
+% Konfigurieren der Fußzeile
+\setbeamertemplate{footline}
+{
+	\hbox{%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\hspace*{2ex}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2ex}
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+
+% Optional: Konfigurieren der Kopfzeile
+\setbeamertemplate{headline}{}
+
+% ====================
+% Weitere Designanpassungen
+% ====================
+
+% Fügen Sie hier weitere Anpassungen hinzu, wie z.B. spezielle Blöcke, Überschriftenstile usw.
+
+\endinput

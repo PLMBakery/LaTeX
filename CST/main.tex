@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[a3paper,landscape]{geometry}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage{enumerate}
+\usepackage[poster]{tcolorbox}
+\tcbuselibrary{listings} % <- replace by \tcbuselibrary{listings}, if minted does not work for you
+\pagestyle{empty}
+\begin{document}
+	\begin{tcbposter}[
+		coverage = {
+			spread,
+			interior style={top color=white,bottom color=gray!50!}
+		},poster = {showframe=true,columns=6,rows=6},
+			boxes = {
+			enhanced standard jigsaw,sharp corners=downhill,arc=1mm,boxrule=0.25mm,
+			colback=white,opacityback=1,colframe=black,
+			title style={left color=black,right color=orange},
+			fonttitle=\bfseries\Large\scshape
+		}
+				]
+		% Ab hier füge ich die Poster Inhalte ein 
+	%...
+	\posterbox{name=title,column=2,span=4,below=top}{
+		\resizebox{12cm}{!}{\bfseries\Huge Cheat Sheet - PLM}\\[1mm]
+		Marc.Weidner@protonmail.ch
+	}
+	%
+	\posterbox[adjusted title=References]{name=references,column=2,span=1.5,above=bottom}{}
+	%
+		%
+	\posterbox[adjusted title=Datum]{name=datum,column=1,span=1,above=bottom}{}
+	\end{tcbposter}
+\end{document}
+
+\posterbox[adjusted title=References]{name=references,column=2,span=1.5,above=bottom}{}
+\posterbox[adjusted title=Process]{name=process,column=2,span=2,above=references}{}
+\posterbox[adjusted title=Project Description]{name=project,
+	sequence=1 between title and bottom then 2 between title and process}{}
+\posterbox[adjusted title=Central Picture]
+{name=picture,column=3,between=title and process}{}
+\posterbox[adjusted title=Core Algorithm]
+{name=algorithm,column=4,between=top and references}{}
+\posterbox[adjusted title=Contact]
+{name=contact,column*=4,span=1.5,between=process and bottom}{}
+%...
+%
+
+
+

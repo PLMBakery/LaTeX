@@ -1,0 +1,48 @@
+% beamercolorthememit.sty
+\ProvidesPackage{beamercolorthememit}[2023/12/03 MIT-style beamer color theme]
+
+% ====================
+% Abhängigkeiten
+% ====================
+\RequirePackage{beamerthemesplit}
+
+% ====================
+% Farbpalette
+% ====================
+
+% Farben im MIT-Stil
+\definecolor{mitred}{RGB}{163, 31, 52}
+\definecolor{mitgray}{RGB}{140, 140, 140}
+
+% Setzen der Farben für Titel und Text
+\setbeamercolor{title}{fg=mitred}
+\setbeamercolor{title in head/foot}{fg=mitred}
+\setbeamercolor{structure}{fg=mitred}
+\setbeamercolor{normal text}{fg=mitgray}
+
+% Hervorhebungsfarben
+\setbeamercolor{alerted text}{fg=mitred}
+\setbeamercolor{block title alerted}{fg=mitred}
+\setbeamercolor{block body alerted}{bg=mitgray}
+
+% ====================
+% Kopfzeilen- und Fußzeilenkonfiguration
+% ====================
+
+% Konfiguration der Kopfzeile
+\setbeamertemplate{headline}{%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=1ex]{title in head/foot}
+		\insertsectionnavigationhorizontal{\paperwidth}{}{}
+	\end{beamercolorbox}
+}
+
+% Konfiguration der Fußzeile
+\setbeamertemplate{footline}{%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=1ex]{title in head/foot}
+		\usebeamerfont{title in head/foot}
+		\hspace*{2ex}
+		My Institute \hfill \insertframenumber{} / \inserttotalframenumber
+	\end{beamercolorbox}
+}
+
+\endinput
