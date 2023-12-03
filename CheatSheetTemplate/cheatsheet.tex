@@ -1,0 +1,89 @@
+% Aurora theme
+% by Marc Weidner
+% Version 1.0 
+% Datum 03/12/2023
+
+\documentclass[final]{beamer}
+
+% [STANDARD PAKETE]
+
+\usepackage[T1]{fontenc} % Kodierung für europäische Schriftarten
+\usepackage{lmodern} % Modernes Schriftartenpaket
+\usepackage[utf8]{inputenc} % Eingabekodierung
+\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter} % Beamerposter-Paket
+\usetheme{aurora}
+\usecolortheme{aurora}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+
+% [LÄNGENANPASSUNGEN]
+
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% [TITEL UND AUTOREN]
+
+\title{Some fancy title: followed by some more text}
+\author{Marc Weidner \inst{1} \and Ben McCallan \inst{2} \and Linzgaurider \inst{2}}
+\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+
+% [FUSSZEILE ANPASSEN]
+
+\setbeamertemplate{footline}{%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2cm,dp=1cm,center]{footline}
+		\usebeamercolor{author in footline}{\color{white}\large\insertdate \hfill}
+		\usebeamercolor{author in footline}{\color{white}\large\inserttitle \hfill}
+		\usebeamercolor{author in footline}{\color{white}\Large\insertframenumber{} / \inserttotalframenumber}
+	\end{beamercolorbox}
+}
+
+% [OPTIONALE LOGOS]
+
+% \logoright{\includegraphics[height=7cm]{figures/logo.png}}
+
+% [INHALT]
+
+
+
+\begin{document}
+	
+	\begin{frame}[t]
+		\begin{columns}[t]
+			\separatorcolumn
+			
+			% [STARt INHALT DER SPALTEN]
+			\begin{column}{\colwidth}
+				\begin{block}{Blocktitel 1}
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi quis, condimentum nibh. Maecenas tempus, elit a commodo blandit, arcu arcu cursus lectus, ac pellentesque sapien magna in risus.
+				\end{block}
+				
+				\begin{block}{Blocktitel 2}
+					Praesent ullamcorper, felis vitae egestas aliquet, nulla dolor porta nulla, non mollis tortor neque eget diam. Nullam in felis et tellus auctor scelerisque id ut erat.
+				\end{block}
+			\end{column}
+			
+			\separatorcolumn
+			
+			\begin{column}{\colwidth}
+				\begin{block}{Blocktitel 3}
+					Sed id felis luctus, cursus dolor in, porttitor urna. Sed laoreet ante vel quam elementum aliquam. Maecenas vitae convallis dolor. Phasellus imperdiet, nunc ac gravida ultricies, felis augue vehicula risus, a sollicitudin lorem quam nec sem.
+				\end{block}
+				
+				\begin{block}{Blocktitel 4}
+					Mauris eget felis nec felis dignissim aliquam. Donec venenatis, eros ac vehicula molestie, justo est feugiat dolor, eget auctor arcu sapien et ante.
+				\end{block}
+			\end{column}
+			% [ENDE INHALT DER SPALTEN]
+			
+		\end{columns}
+	\end{frame}
+	
+\end{document}
