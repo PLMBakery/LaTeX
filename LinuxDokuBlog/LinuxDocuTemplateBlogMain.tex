@@ -1,0 +1,96 @@
+\documentclass[a4paper]{article}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{ccicons}
+\geometry{a4paper, margin=1in}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{black},   
+	commentstyle=\color{green},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{gray},
+	stringstyle=\color{red},
+	basicstyle=\ttfamily\footnotesize\color{white},
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+	
+	%Titelseite beginnt hier
+		\begin{titlepage}
+			\begin{center}
+				\includegraphics[width=3cm]{figures/logo} % Adjust the width as needed
+				\vspace{1cm}
+				
+				\Huge \textbf{Your Document Title}
+				
+				\vspace{2cm}
+				
+				\Large Your Name
+				
+				\vfill
+				
+				\today
+			\end{center}
+		\end{titlepage}
+	%Hier endet die Titelseite	
+
+	%Inhaltsverzeichnis
+	\tableofcontents
+	%Neue Seite
+	\newpage
+	
+	%Inhalte des Dokumentes
+	\section{Erster Abschnitt}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	
+	\subsection{Unterabschnitt Eins}
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	
+	\begin{lstlisting}[language=bash, caption={Beispiel Bash-Skript}]
+		#!/bin/bash
+		echo "Hallo Welt"
+	\end{lstlisting}
+	
+	\section{Zweiter Abschnitt}
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figures/logo}
+		\caption{Your image caption.}
+		\label{fig:your_image}
+	\end{figure}
+	
+	\subsection{Unterabschnitt Zwei}
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	%copyright Hinweis auf neuer Seite
+	\newpage
+	\section*{Copyright Notice}
+	\fbox{\Huge \ccbyncsa{}}\\\\
+	This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to share and adapt this work for non-commercial purposes, provided you give appropriate credit and distribute your contributions under the same license.\\\\
+	
+	\newpage
+	
+	
+	%Ab hier kommen Verzeichnise
+	%Code Auflistung
+	\newpage
+	\lstlistoflistings
+	%Bilder Auflistung
+	\newpage
+	\listoffigures
+	
+\end{document}
