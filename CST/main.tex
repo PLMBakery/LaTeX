@@ -15,7 +15,7 @@
 			boxes = {
 			enhanced standard jigsaw,sharp corners=downhill,arc=1mm,boxrule=0.25mm,
 			colback=white,opacityback=1,colframe=black,
-			title style={left color=black,right color=orange},
+			title style={color=black},
 			fonttitle=\bfseries\Large\scshape
 		}
 				]
@@ -25,26 +25,63 @@
 		\resizebox{12cm}{!}{\bfseries\Huge Cheat Sheet - PLM}\\[1mm]
 		Marc.Weidner@protonmail.ch
 	}
-	%
-	\posterbox[adjusted title=References]{name=references,column=2,span=1.5,above=bottom}{}
-	%
-		%
+	%----------------- Fußzeile 
 	\posterbox[adjusted title=Datum]{name=datum,column=1,span=1,above=bottom}{}
+	\posterbox[adjusted title=References]{name=references,column=2,span=1,above=bottom}{}
+	\posterbox[adjusted title=Erzeugt]{name=erzeugt,column=3,span=2,above=bottom}{}
+	\posterbox[adjusted title=Klassifizierung]{name=class,column=5,span=1,above=bottom}{}
+	\posterbox[adjusted title=Seite]{name=page,column=6,span=1,above=bottom}{\pagenumbering{1/1}}
+	%--------------- BOX lInks oben
+	\posterbox[adjusted title=Beschreibung]{name=desc,
+		sequence=1 between top and datum then 2 between title and references}{
+		See [\ref{litA}]: \lipsum[1]
+		\begin{center}
+			\tikz \draw[thick,rounded corners=8pt]
+			(0,0)--(0,2)--(1,3.25)--(2,2)--(2,0)--(0,2)--(2,2)--(0,0)--(2,0);
+			\quad by [\ref{litB}]
+		\end{center}
+		\lipsum[2-3]\par
+		See [\ref{litC}]:
+		\lipsum[4]
+		\begin{center}
+			\tikz \shadedraw [left color=red,right color=blue]
+			(0,0) rectangle (2,2);
+		\end{center}
+		That's all.
+	}
+	%...
+	%...bild rechts oben
+	\posterbox[adjusted title=Central Picture,
+	interior style={fill overzoom image=blueshade.png}]
+	{name=picture,column=6,below=top}{}
+	%..
+	%--------------- BOX Center mit Graphiken
+	\posterbox[adjusted title=Center Box 1,halign=center]{name=center,column=3,span=3,above=erzeugt}{
+		\begin{tikzpicture}[very thick,radius=2cm]
+			\begin{scope}
+				\path[draw=black,fill=white] (0,0) circle;
+				\path[fill=red] (0,0) -- (2,0) arc [start angle=0, end angle=30];
+			\end{scope}
+			\begin{scope}[xshift=5cm]
+				\path[draw=black,fill=white] (0,0) circle;
+				\path[fill=red] (0,0) -- (2,0) arc [start angle=0, end angle=70];
+			\end{scope}
+			\begin{scope}[xshift=10cm]
+				\path[draw=black,fill=white] (0,0) circle;
+				\path[fill=red] (0,0) -- (2,0) arc [start angle=0, end angle=110];
+			\end{scope}
+			\begin{scope}[xshift=15cm]
+				\path[draw=black,fill=white] (0,0) circle;
+				\path[fill=red] (0,0) -- (2,0) arc [start angle=0, end angle=240];
+			\end{scope}
+		\end{tikzpicture}
+	}
+	%..
+	
 	\end{tcbposter}
 \end{document}
 
-\posterbox[adjusted title=References]{name=references,column=2,span=1.5,above=bottom}{}
-\posterbox[adjusted title=Process]{name=process,column=2,span=2,above=references}{}
-\posterbox[adjusted title=Project Description]{name=project,
-	sequence=1 between title and bottom then 2 between title and process}{}
-\posterbox[adjusted title=Central Picture]
-{name=picture,column=3,between=title and process}{}
-\posterbox[adjusted title=Core Algorithm]
-{name=algorithm,column=4,between=top and references}{}
-\posterbox[adjusted title=Contact]
-{name=contact,column*=4,span=1.5,between=process and bottom}{}
-%...
-%
+
 
 
 
