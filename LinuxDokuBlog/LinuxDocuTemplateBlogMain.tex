@@ -2,10 +2,14 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{fancybox}
 \usepackage{geometry}
 \usepackage{ccicons}
-\geometry{a4paper, margin=1in}
-
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage[german]{babel}
+\geometry{margin=1in, bottom=2cm} % Adjust margins
+%meine code boxen
 \lstdefinestyle{mystyle}{
 	backgroundcolor=\color{black},   
 	commentstyle=\color{green},
@@ -14,7 +18,7 @@
 	stringstyle=\color{red},
 	basicstyle=\ttfamily\footnotesize\color{white},
 	breakatwhitespace=false,         
-	breaklines=true,                 
+	breaklines=false,  % Prevent line breaks within code listings
 	captionpos=b,                    
 	keepspaces=true,                 
 	numbers=left,                    
@@ -25,7 +29,20 @@
 	tabsize=2
 }
 
+%Document Title
+\title{Docker installation Raspberry PI mit Portainer}
+\author{Linzgaurider}
+
+%codeboxen setzten
 \lstset{style=mystyle}
+% Fußzeile u. Kopfzeile
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{Docker installation Raspberry PI mit Portainer}
+\rfoot{Version 1.0 - \today}
+\lfoot{https://linzgaurider.wordpress.com}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
 	
@@ -35,12 +52,15 @@
 				\includegraphics[width=3cm]{figures/logo} % Adjust the width as needed
 				\vspace{1cm}
 				
-				\Huge \textbf{Your Document Title}
+				\Huge \textbf{Docker installation Raspberry PI mit Portainer}
 				
 				\vspace{2cm}
 				
-				\Large Your Name
+				\Large Linzgaurider
 				
+				\vspace{2cm}
+				
+				\fbox{\Huge \ccbyncsa{}}
 				\vfill
 				
 				\today
@@ -54,29 +74,129 @@
 	\newpage
 	
 	%Inhalte des Dokumentes
-	\section{Erster Abschnitt}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	\section{Einleitung}
+	In diesem Dokument habe ich absichtlich auf die Beschreibung des Vorgangs verzichtet, bei dem das Raspberry Pi-Image auf die Festplatte kopiert wird, sowie auf die Erklärung, wie der Bootmodus umgangen wird. Diese Schritte sind bereits umfassend im Internet dokumentiert, weshalb ich sie hier nicht erneut aufgeführt habe. Sie werden jedoch in meinem PDF-Dokument, an dem ich arbeite, vollständig behandelt.
 	
-	\subsection{Unterabschnitt Eins}
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	
-	\begin{lstlisting}[language=bash, caption={Beispiel Bash-Skript}]
-		#!/bin/bash
-		echo "Hallo Welt"
-	\end{lstlisting}
-	
-	\section{Zweiter Abschnitt}
-	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-	\begin{figure}[htbp]
+	\section{Vorbereitung}
+	Nachdem wir uns erfolgreich über "MobaXterm" in unserer Kommandozeile angemeldet haben, 
+		\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.8\textwidth]{figures/logo}
-		\caption{Your image caption.}
-		\label{fig:your_image}
+		\includegraphics[width=0.8\textwidth]{figures/01}
+		\caption{MobaXtrem 1.}
+		\label{fig:MobaXtrem Darstellung}
 	\end{figure}
+	ist der nächste Schritt die ersteinmal das OS auf die aktuelle Version zu bringen bevor wir dann mit der  Installation von "Git" beginnen, falls notwendig. Dies ermöglicht uns, vorgefertigte Pakete zu nutzen, um den Installationsprozess zu vereinfachen. Führen Sie dazu bitte den folgenden Befehl aus;
 	
-	\subsection{Unterabschnitt Zwei}
-	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	%copyright Hinweis auf neuer Seite
+\begin{lstlisting}[language=bash, caption={Installation GIT}, breaklines=false]
+	sudo apt install git
+\end{lstlisting}
+Danach wird dieser Befehl ausgeführt um die Umgebung zu aktualisieren
+
+\begin{lstlisting}[language=bash, caption={Updaten \& Upgrade des OS}, breaklines=false]
+sudo apt get updates $$ upgrade
+\end{lstlisting}
+Während des Installationsprozesses wird an einer Stelle ein kurzer Halt eingelegt. Hierbei ist Ihre einmalige Bestätigung erforderlich, indem Sie die Taste "Y" drücken und anschließend [Enter], um die Installation fortzusetzen.
+\\\\
+Durch die Integration von "Git" in unser System eröffnen sich nun neue Möglichkeiten, auf das Repository von "Novaspirit Tech" zuzugreifen. Innerhalb dieses Repositories finden Sie eine umfangreiche Sammlung von Paketen im Kontext des "Pi-Hostet"-Projekts, die speziell im Zusammenhang mit Docker und Portainer entwickelt wurden. Diese Pakete können erheblich dazu beitragen, unsere Zeit bei der Konfiguration zu optimieren.
+\\\\
+\subsection{Download Verzeichnis}
+Um diese wertvollen Pakete auf unseren Raspberry Pi herunterzuladen, beginnen wir damit, einen dedizierten "Downloads"-Ordner zu erstellen. Bitte führen Sie die nachstehenden Befehle nacheinander aus, Zeile für Zeile, um den Ordner zu erstellen und die Pakete darin abzulegen sowie zu entpacken. Beachten Sie dabei die Anweisungen sorgfältig.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/02}
+	\caption{Download Verzeichnis prüfen und anlegen}
+	\label{fig:Download Verzeichnis}
+\end{figure}
+Im nächsten Schritt habe ich mittels des Befehls "ls" die Liste der vorhandenen Verzeichnisse angezeigt. Wenn bei Ihnen der Ordner "Downloads" nicht angezeigt wird, sollten Sie diesen manuell im Raspberry Pi OS erstellen. Dies können Sie mit dem Befehl "mkdir" durchführen. 
+\begin{lstlisting}[language=bash, caption={Verzeichnis anzeigen}, breaklines=false]
+	ls
+\end{lstlisting}
+\begin{lstlisting}[language=bash, caption={Verzeichnis wechseln}, breaklines=false]
+	mkdir Downloads
+\end{lstlisting}
+\begin{lstlisting}[language=bash, caption={Verzeichnis erstellen}, breaklines=false]
+	cd Downloads
+\end{lstlisting}
+\subsection{Paket Download zur installation}
+Nachdem wir den letzten Befehl "cd Downloads/" ausgeführt haben, erfolgt ein Wechsel in das zuvor erstellte Verzeichnis. Hierdurch befinden wir uns im "Downloads"-Verzeichnis und sind bereit, alle benötigten Pakete herunterzuladen. Sie können diesen Vorgang mit dem folgenden Befehl durchführen…
+\begin{lstlisting}[language=bash, caption={Paket Download}, breaklines=false]
+	git clone https://github.com/novaspirit/pi-hosted
+\end{lstlisting}
+Nachdem wir erfolgreich in das "Downloads"-Verzeichnis gewechselt sind, setzen wir den Pfad fort und navigieren zum "pi-hosted"-Verzeichnis, indem wir den Befehl "cd pi-hosted/" ausführen. Damit setzen wir unsere Arbeit in Linux fort.
+\begin{lstlisting}[language=bash, caption={pi hosted Ordner betreten}, breaklines=false]
+cd pi-hosted/
+\end{lstlisting}
+\section{Docker Installation}
+In diesem Schritt führen wir die Datei "install\_docker.sh" aus, indem wir den Befehl "./install\_docker.sh" eingeben. Dieser Schritt dient der Installation von Docker auf Ihrem System und ermöglicht es Ihnen, Container-Anwendungen zu verwenden und zu verwalten. Bitte führen Sie diesen Befehl aus, um den Docker-Installationsprozess zu starten.
+\begin{lstlisting}[language=bash, caption={Docker installation Script}, breaklines=false]
+./install_docker.sh
+\end{lstlisting}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/03}
+	\caption{Docker installation Script}
+	\label{fig:Docker installation Script}
+\end{figure}
+Da sich das Skript in dem aktuellen Verzeichnis befindet und unser Raspberry Pi den Dateinamen bereits kennt, könnt ihr die Tabulator-Taste verwenden, um den Dateinamen automatisch zu vervollständigen. Alternativ könnt ihr auch die bisherige Methode anwenden, indem ihr die Zeile aus diesem Forum kopiert und sie dann durch einen Rechtsklick in die Kommandozeile einfügt. Anschließend führt ihr den Befehl mit [Enter] aus.
+\\\\
+Bitte beachtet, dass dieser Vorgang einige Zeit in Anspruch nehmen wird, etwa 5 Minuten. In dieser Zeit könnt ihr euch eine kurze Pause gönnen und einen Kaffee genießen.
+\\\\
+Nach Abschluss des Prozesses sollte das Ergebnis ähnlich aussehen wie im folgenden Screenshot dargestellt…
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/04}
+	\caption{Beendte Docker Installation}
+	\label{fig:beendte Docker Installation}
+\end{figure}
+Nachdem der Server "sechzig" das durchgeführt hat, führen wir den Neustart manuell durch. Dies erfolgt unkompliziert mit dem folgenden Befehl:
+
+\begin{lstlisting}[language=bash, caption={Reboot Befehl}, breaklines=false]
+	sudo reboot
+\end{lstlisting}
+
+Nachdem der Neustart abgeschlossen ist, könnt ihr euch erneut wie zuvor in der Kommandozeile anmelden.
+
+
+\section{Installation Portainer}
+Anschließend wechseln wir erneut in das Verzeichnis "Downloads/pi-hosted" mit dem folgenden Befehl:
+\begin{lstlisting}[language=bash, caption={Verzeichnis pi hosted betreten}, breaklines=false]
+	cd Downloads/pi-hosted/
+\end{lstlisting}
+Von diesem Verzeichnis aus können wir das nächste Installations-Skript ausführen, um "Portainer" zu installieren:
+\begin{lstlisting}[language=bash, caption={Installation Portainer}, breaklines=false]
+./install_portainer.sh
+\end{lstlisting}
+Nach Abschluss dieses Vorgangs könnt ihr euren Browser öffnen und auf die Web-Oberfläche von "Portainer" zugreifen, indem ihr den Hostnamen oder die IP-Adresse des Raspberry Pi sowie den Port ":9000" verwendet. In meinem Beispiel lautet die Eingabe im Browser wie folgt:\\
+\\
+\shadowbox{\texttt{http://sechzig:9000}}
+\\\\
+Dadurch öffnet sich im Browser eine Webseite, die euch direkten Zugriff auf euren Raspberry Pi und die bisher eingerichteten Komponenten bietet. 
+\\
+\subsection{Fehlermeldung Portainer Timeout}
+Sollte diese Fehlermeldung erscheinen können Sie diese beheben mit dem folgenden Befehl nach dem Screenshot. Ich weiß leider nicht woher diese kommen kann, kenne aber mehrere Fälle das es plötzlich passiert
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/05}
+	\caption{Portainer Fehlermeldung Timeout}
+	\label{fig:Portainer Fehlermeldung Timeout}
+\end{figure}
+\begin{lstlisting}[language=bash, caption={Portainer Reboot}, breaklines=false]
+	sudo docker restart portainer
+\end{lstlisting}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/06}
+	\caption{Portainer Einrichtung }
+	\label{fig:Portainer Einrichtung }
+\end{figure}
+Erstellen Sie den Namen für den Account falls Ihnen admin nicht zusagt und vergeben Sie ein PWD das den Regeln entspricht
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/07}
+	\caption{Portainer Einrichtung fertig }
+	\label{fig:Portainer Einrichtung fertig}
+\end{figure}
+%copyright Hinweis auf neuer Seite
 	\newpage
 	\section*{Copyright Notice}
 	\fbox{\Huge \ccbyncsa{}}\\\\
@@ -94,3 +214,24 @@
 	\listoffigures
 	
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
