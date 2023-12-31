@@ -1,0 +1,58 @@
+%------------------------------------------------
+%  Erstellt von:	Marc Weidner
+%  Erstellt am: 	24.12.2023
+%  Vorlage für:		DokumentationsVorlage Marc Weidner
+%  
+%
+% 
+%-------------------------------------------------
+\documentclass[ngerman,parskip=half*,listof=totoc]{scrartcl}
+%------------------------------------------------
+%  Allgemeine Pakete
+%------------------------------------------------
+\input{defpack.tex}
+%------------------------------------------------
+%  Beginn Dokument und der Inhalte des Dokumentes
+%------------------------------------------------
+\begin{document}
+%------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------
+\begin{titlepage}
+	\begin{center} % Zentrierung des Inhalts
+		\includegraphics[width=4cm]{pics/logo} % Logo
+		\vspace{1cm} % Vertikaler Abstand nach dem Logo
+		
+		\Huge \textbf{Test Management}\\ % Haupttitel
+		\vspace{0.5cm} % Vertikaler Abstand
+		\Large \textbf{Beispiel an einer NX Umgebung}\\ % Untertitel
+		\vspace{0.5cm} % Vertikaler Abstand
+		\large \textcolor{red}{-ENTWURF-} % Entwurfshinweis
+		
+		\vspace{10cm} % Vertikaler Abstand vor dem Dokumentstatus
+		
+
+			\begin{tabbing}
+			\hspace{5cm}\=\kill
+			\textbf{Owner:}\> Marc Weidner \\
+			\textbf{Start Datum:} \> 24.12.2023 \\ 
+			\textbf{Version:}\> 1.0 \\
+			\textbf{Status: }\> In Arbeit \\
+		\end{tabbing} 
+	
+
+		
+		\vfill % Füllt den verbleibenden vertikalen Raum
+
+	\end{center}
+\end{titlepage}
+%------------------------------------------------
+%   Inhaltsverzeichnis
+%------------------------------------------------
+	\tableofcontents
+	\pagebreak	
+%------------------------------------------------
+%   Kapitel werden eingefügt über die Datei kapitel.tex diese wird hier angezogen
+%------------------------------------------------
+\input{kapitel.tex}
+\end{document}

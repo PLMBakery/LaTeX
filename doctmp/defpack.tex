@@ -1,0 +1,113 @@
+ % hier wird das Aussehen des Dokumentes definiert und die Pakete die geladen werden. Allegmeine Definitons Gunrdlage für das Design des Dokuments
+
+
+\usepackage{iftex} % Überprüft, ob das Dokument mit PDFLaTeX, XeLaTeX oder LuaLaTeX kompiliert wird.
+\ifPDFTeX
+\usepackage[utf8]{inputenc} % Ermöglicht die Eingabe von Umlauten und anderen Sonderzeichen in UTF-8-Kodierung.
+\usepackage[T1]{fontenc} % Verbessert die Darstellung von Umlauten und anderen Sonderzeichen in PDF-Dokumenten.
+\fi	
+\usepackage{lmodern} % Lädt die "Latin Modern" Schriftarten, eine verbesserte Version der Computer Modern Schriftarten.
+\usepackage[export]{adjustbox} % Ermöglicht erweiterte Grafikeinstellungen, wie Skalierung, Beschnitt und Rahmen.
+\usepackage{graphicx} % Ermöglicht das Einbinden von Grafiken und Bildern.
+\usepackage[dvipsnames]{xcolor} % Ermöglicht die Verwendung einer großen Palette von Farben.
+\usepackage{url} % Ermöglicht die korrekte Formatierung und Hervorhebung von URLs.
+\urlstyle{same} % Setzt den Stil für URLs, sodass sie in derselben Schriftart wie der umgebende Text erscheinen.
+\usepackage[sfdefault]{ClearSans} % Lädt die "Clear Sans" Schriftart als Standardsans-Serif-Schriftart.
+\usepackage{tabularx} % Ermöglicht erweiterte Tabellenfunktionen, wie automatische Breitenanpassung.
+\usepackage{colortbl} % Ermöglicht das Hinzufügen von Farbe zu Tabellenzellen.
+\usepackage{textcomp} % Ermöglicht den Zugriff auf Textsymbole.
+\usepackage{longtable} % Ermöglicht die Erstellung von Tabellen, die sich über mehrere Seiten erstrecken können.
+\usepackage{bmpsize} % Ermöglicht die korrekte Größenbestimmung von Bitmap-Grafiken.
+\usepackage{calc} % Ermöglicht die Verwendung von arithmetischen Operationen in LaTeX-Befehlen.
+\usepackage{array} % Erweitert die Funktionen und Optionen für Tabellen.
+\usepackage{enumitem,amssymb} % `enumitem` ermöglicht individuelle Anpassungen von Listen, `amssymb` lädt zusätzliche mathematische Symbole.
+\usepackage[printonlyused,withpage]{acronym} % Ermöglicht die Verwendung von Abkürzungen, wobei nur verwendete Abkürzungen gedruckt und mit Seitenzahlen versehen werden.
+%\usepackage[colorlinks]{hyperref} % Ermöglicht das Erstellen von Hyperlinks und PDF-Bookmarks; auskommentiert.
+\usepackage[ngerman]{babel} % Stellt sicher, dass das Dokument deutsche Sprachkonventionen verwendet.
+\usepackage{float} % Verbessert die Platzierung von Float-Objekten (wie Tabellen und Abbildungen).
+\usepackage{hyperref} % Ermöglicht das Erstellen von Hyperlinks und PDF-Bookmarks.
+\usepackage{pdfpages} % Ermöglicht das Einbinden von kompletten oder Teilen von PDF-Seiten.
+\usepackage{media9} % Ermöglicht das Einbinden von Multimedia-Inhalten (Audio, Video) in PDFs.
+\usepackage[bottom=3cm]{geometry} % Einstellung des Seitenlayouts, hier speziell Anpassung des unteren Randes.
+\usepackage[headsepline, footsepline]{scrlayer-scrpage} % Laden Sie das scrpage2-Paket für scrheadings
+
+
+
+
+%------------------------------------------------
+%  Hinweise
+%------------------------------------------------
+% Für Pfade kann entweder \path oder \url verwendet werden
+
+
+
+
+
+%------------------------------------------------
+%  Kopf uns Fusszeile
+%------------------------------------------------
+\ihead{Test Management} % Left header: Document name
+\ofoot{\pagemark} % Right footer: Page number
+\cfoot{© 2022-2024 PLMBakery } % Clear center footer
+\ifoot{\url{http://plmbakery.de}} % Left footer: Website
+\setkomafont{pagefoot}{\normalfont} % Font style for footer
+\setkomafont{pagehead}{\normalfont\bfseries} % Font style for header
+%------------------------------------------------
+%  Fusszeile Anpassung wenn Plain verwendet wird wie in den Verzeichnissen am Ende, das mache ich weil dort den Header nicht haben will sondern nur die Fusszeile
+%------------------------------------------------
+
+
+
+
+
+%------------------------------------------------
+%  Definiton der Tabellenform für die Texte Bild Links Text Rechts
+%------------------------------------------------
+\newenvironment{eintrag}[1]{
+	\par\medskip\noindent%
+	\begin{minipage}[t]{\dimexpr.5\linewidth-10\tabcolsep\relax}
+		\strut\\[-\baselineskip]#1
+	\end{minipage}\hspace{2\tabcolsep}\begin{minipage}[t]{\dimexpr0.4\linewidth-\tabcolsep\relax}}{\end{minipage}}
+
+
+%------------------------------------------------
+%  Für Screenshots mit 7cm breite und text daneben / verwende ich als Standard nun
+%------------------------------------------------
+\newenvironment{eintrag2}[1]{
+	\par\medskip\noindent%
+	\begin{minipage}[t]{\dimexpr.5\linewidth-\tabcolsep\relax}
+		\strut\\[-\baselineskip]#1
+	\end{minipage}\hspace{1\tabcolsep}\begin{minipage}[t]{\dimexpr.5\linewidth-\tabcolsep\relax}}{\end{minipage}}
+
+%------------------------------------------------
+%%% FAQ Idee
+%------------------------------------------------
+\newcommand{\faqu}[2]{%
+	{\textbf{Frage:}} \normalfont\sffamily\textsf{#1}\par
+	\noindent{\textbf{\textit{Antwort:}}} #2
+}
+\newcommand{\sol}[2]{%
+	\noindent\rule[1ex]{\textwidth}{0.5pt}
+	{\textbf{\textcolor{red}{Issue}}} \normalfont\sffamily\textsf{#1}\par
+	\noindent{\textbf{\textcolor{green}{Solution:}}} #2\\
+	\noindent\rule[1ex]{\textwidth}{0.5pt}
+}
+
+\newcommand{\faq}[2]{%
+	\noindent\rule[1ex]{\textwidth}{0.5pt}
+	{\textbf{\textcolor{red}{Frage}}} \normalfont\sffamily\textsf{#1}\par
+	\noindent{\textbf{\textcolor{green}{Antwort:}}} #2\\
+	\noindent\rule[1ex]{\textwidth}{0.5pt}
+}
+
+%------------------------------------------------
+%  Zuer Erstellung einer Todoliste
+%------------------------------------------------
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+
+
+
+
+

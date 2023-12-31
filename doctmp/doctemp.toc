@@ -1,0 +1,13 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Readme und Erklärungen}{3}{section.1}%
+\contentsline {section}{\numberline {2}Test Bild einbinden}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Test Bild einbinden links rechts}{5}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Abkürzungen verwenden}{5}{section.3}%
+\contentsline {section}{\numberline {4}Historie und Freigabe}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Historie}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Freigabe}{6}{subsection.4.2}%
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{7}{section*.3}%
+\contentsline {section}{\nonumberline Tabellenverzeichnis}{8}{section*.4}%
+\contentsline {section}{\numberline {5}Abkürzungsverzeichnis}{9}{section.5}%
+\contentsline {section}{\numberline {6}Copyright}{10}{section.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

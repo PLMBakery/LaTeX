@@ -1,0 +1,166 @@
+\textbf{Hinweis}\\
+NX \textsuperscript{\texttrademark} ist ein eingetragenes Warenzeichen der Firma Siemens PLM Software
+
+Bei der Erstellung der Unterlage wurde mit größter Sorgfalt vorgegangen. Die Texte und Bilder wurden von Mitarbeitern der Firma Nexeo erstellt. Dennoch können Fehler nicht vollständig ausgeschlossen werden. Der/ Die Ersteller des Dokumentes noch die Firmen Nexeo GmbH/ConmatiX GmbH, deren Dachgesellschaften und Nachfolge Unternehmen, können für die fehlerhaften Angaben und deren Folgen keine juristische Verantwortung noch irgendeine Haftung übernehmen. Verbesserungsvorschläge und Hinweise auf Fehler werden selbstverständlich gerne angenommen.
+
+\textbf{Verwendete Version}\\
+Dieses Dokument wurde mit der NX \textsuperscript{\texttrademark} 1855 erstellt die im April 2019 erschienen ist. Dieses Dokument wurde so erstellt das es für die NX Versionen ab NX\textsuperscript{\texttrademark} 1847 verwendet werden kann. Da die Icons sich mit der neuen Version verändert hat kann es in der NX\textsuperscript{\texttrademark} 12 und früheren Versionen vermutlich nur bedingt eingesetzt werden. 
+
+\textbf{Mitarbeiter}\\
+Diese Unterlage wurde erstellt von Marc Weidner. CAD und Teamcenter Trainer und Consultant seit 2007. Marc Weidner ist seit 2004 in der Welt von NX \textsuperscript{\texttrademark} Zuhause. Damals noch als Konstrukteur bei einem Schweizer Maschinenbau Unternehmen. Marc Weidner ist seit 2015 Mitarbeiter der Nexeo GmbH und dort für Trainings und Consulting für folgende Bereiche der NX \textsuperscript{\texttrademark} und Teamcenter \textsuperscript{\texttrademark} Software zuständig;\\
+\begin{itemize}
+	\item NX \textsuperscript{\texttrademark} Basis Konstruktion I und II
+	\item NX \textsuperscript{\texttrademark} Umsteiger Training
+	\item NX \textsuperscript{\texttrademark} Update Trainings
+	\item NX \textsuperscript{\texttrademark} Varianten Konstruktion Einzelteile
+	\item NX \textsuperscript{\texttrademark} Varianten Konstruktion Baugruppen
+	\item NX \textsuperscript{\texttrademark} Assoziative Baugruppen Konstruktion
+	\item NX \textsuperscript{\texttrademark} Routing Mechanisch
+	\item NX \textsuperscript{\texttrademark} Routing Elektrisch
+	\item NX \textsuperscript{\texttrademark} Installation und Administration
+	\item TC \textsuperscript{\texttrademark} Installation
+	\item TC \textsuperscript{\texttrademark} Administration
+	\item TC \textsuperscript{\texttrademark} Anwendung
+	\item TC \textsuperscript{\texttrademark} AW Installation
+	\item TC \textsuperscript{\texttrademark} AW Administration
+	\item TC \textsuperscript{\texttrademark} AW Anwendung
+	\item TC \textsuperscript{\texttrademark} Integration NX und AW \textsuperscript{\texttrademark}
+\end{itemize}
+
+
+
+\\
+\begin{lstlisting}
+	if not defined NX_TMP_DIR set NX_TMP_DIR=%TEMP%
+	if not exist %NX_TMP_DIR% mkdir %NX_TMP_DIR%
+	
+	If not defined UGII_TMP_DIR set UGII_TMP_DIR=%NX_TMP_DIR%\nx
+	if not exist %UGII_TMP_DIR% mkdir %UGII_TMP_DIR%
+\end{lstlisting}
+
+
+
+\begin{eintrag}{
+		\includegraphics[width=14cm,frame=0.25pt]{pics/000034}\captionof{figure}{Temp Variablen}} 	
+\end{eintrag}\\
+
+%------------------------------------------------
+%  Für Screenshots mit 7cm breite und text daneben / verwende ich als Standard nun
+%------------------------------------------------
+\begin{eintrag2}{
+		\includegraphics[width=7cm,frame=0.25pt]{pics/000034}\captionof{figure}{Temp Variablen}} 	
+\end{eintrag2}\\
+\textbf{}
+
+
+\begin{eintrag}{
+		\includegraphics[width=14cm,]{pics/0001}} 	
+\end{eintrag}\\
+\captionof{figure}{Dispatcher Components to install}
+
+
+
+
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+	My ToDo list
+	
+	\begin{itemize}
+		\item Immediate plan of action.
+		
+		\begin{todolist}
+			\item List item 1 goes here.
+			\item List item 2 goes here.
+			\begin{todolist}
+				\item Sublist item 1 goes here.
+				\item Sublist item 2 goes here.
+			\end{todolist}
+			\item List item 3 goes here
+			\item List item 4 goes here.
+		\end{todolist}
+		
+	\end{itemize}
+
+
+
+%Fragen und Antworten 
+%\newcounter{question}
+%\setcounter{question}{0}
+\newcommand\Que[1]{%
+	\leavevmode\par
+	%\stepcounter{question}
+	\noindent
+	\textbf{\textcolor{red}{\underline{Q}}}\\#1\par}
+\newcommand\Ans[2][]{%
+	\leavevmode\par\noindent
+	{\textbf{\textcolor{teal}{\underline{A}}}\\ \textbf{#1}#2\par}}
+
+
+
+%horizontale trennung
+	\noindent\rule[1ex]{\textwidth}{1pt}
+	
+	
+%PDF auf seite verlinken
+\\
+\href[page=5]{./pdf/TCBOMMngtdBOMeBOM.pdf}{thedoc, page 5}
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm]{pics/0013}
+	\caption{Säule 1}\label{Säule 1}
+\end{figure}
+
+
+
+\chapter*{Kapitel 2}
+\addcontentsline{toc}{chapter}{Kapitel 2}
+\section*{Säule 1 - Selbstbewusstsein}
+\addcontentsline{toc}{section}{Säule 1 - Selbstbewusstsein}
+
+
+
+\usepackage{fancyhdr,lipsum}% http://ctan.org/pkg/{fancyhdr,lipsum}
+\usepackage{graphicx,lastpage}% http://ctan.org/pkg/{graphicx,lastpage}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\fancypagestyle{plain}{
+	\fancyhf{}% Clear header/footer
+	\fancyhead[R]{\includegraphics[width=\linewidth,height=5pt]{example-image-a.pdf}}% Right header
+	\fancyfoot[L]{}% Left footer
+	\fancyfoot[R]{\thepage\  / \pageref{LastPage}}% Right footer
+}
+\pagestyle{plain}
+
+
+\Qitem{ \Qq{An deinem freien Tag regnet es, ärgert dich das?}\\ \hskip0.4cm \QO{}
+	Ja \hskip0.5cm \QO{} Nein }
+
+
+
+video einbetten
++
+\includemedia[
+width=0.6\linewidth,
+height=0.45\linewidth,
+activate=pageopen,
+flashvars={
+	source=videos/arm001.mp4
+	&autoPlay=true
+	&loop=true
+}
+]{\includegraphics[width=0.6\linewidth]{Pics/playbutton2.png}}{VPlayer.swf}
+
+
