@@ -1,0 +1,304 @@
+% Erstellt / Angepasst von Marc Weidner
+%\ProvidesPackage{ubuntubeamer}[2014/04/26 v2014.04 (Dominik Wagenfuehr)]% original creator
+\ProvidesPackage{redblue}[2024/02/02 v2024.01 (Marc Weidner)]
+
+%%%%%%%%%%%%%%%%%%%%%
+% needed packages
+%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[utf8]{inputenc}     %% UTF8-encoding
+\RequirePackage[T1]{fontenc}        %% T1-fonts
+\RequirePackage{lmodern}            %% Latin Modern fonts
+\RequirePackage{graphicx}           %% include graphics
+\RequirePackage[scaled=0.9]{helvet} %% Helvetica as Arial-substitute
+
+%%%%%%%%%%%%%%%%%%%%%
+% defined commands
+%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{ifthen}
+\newcommand*{\TheLanguage}{English}
+\newcommand*{\TheRightsNotice}{All rights reserved.}
+\newcommand*{\TheCCLicenseText}{CreativeCommons “Attribution-ShareAlike 4.0 International”}
+\newcommand*{\TheTranslatedPage}{Page}
+\newcommand*{\TheTranslatedTocTitle}{Table of content}
+\newcommand*{\TheLicenseInformation}{Slides and content are distributed under (if not stated otherwise):}
+
+% Language definitions
+\newcommand*{\SetLanguage}[1]{%
+  \ifthenelse{\equal{#1}{German}}{%
+    % defining German as presentation language
+    \renewcommand*{\TheLanguage}{German}%
+    \renewcommand*{\TheRightsNotice}{PLMQuarterback | PLMCarpenter}%
+    \renewcommand*{\TheTranslatedPage}{Seite}
+    \renewcommand*{\TheTranslatedTocTitle}{Inhalt}
+    \renewcommand*{\TheCCLicenseText}{CreativeCommons „Namensnennung – Weitergabe unter gleichen Bedingungen 4.0 International“}
+    \renewcommand*{\TheLicenseInformation}{Folien und Inhalte unterliegen (wenn nicht
+anders angegeben) der}
+
+    \RequirePackage[ngerman]{babel}%
+  }{%
+    \ifthenelse{\equal{#1}{English}}{%
+      % defining English as presentation language
+      \renewcommand*{\TheLanguage}{English}%
+      \renewcommand*{\TheRightsNotice}{Some rights reserved.}%
+      \renewcommand*{\TheTranslatedPage}{Page}
+      \renewcommand*{\TheTranslatedTocTitle}{Table of content}
+      \renewcommand*{\TheCCLicenseText}{CreativeCommons “Attribution-ShareAlike 4.0 International”}
+      \renewcommand*{\TheLicenseInformation}{Slides and content are distributed under (if not stated otherwise):}
+      \RequirePackage[english]{babel}%
+    }{%
+      \errmessage{Undefined language: #1}%
+    }%
+  }%
+}
+
+% Mail
+\newcommand*{\TheMail}{}
+\newcommand*{\mail}[1]{%
+  \renewcommand*{\TheMail}{#1}%
+}
+\newcommand*{\insertmail}{\TheMail}
+
+% title frame
+\newcommand{\titleframe}{%
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+}
+
+% table of contents
+\newcommand{\tocframe}[1][]{%
+\begin{frame}
+\frametitle{\TheTranslatedTocTitle}
+\ifthenelse{\boolean{UseImages}}{%
+  \hspace*{-7.5mm}%
+  \begin{beamercolorbox}[ht=65.75mm,wd=63.3mm,sep=0mm]{framebackground}%
+  \includegraphics[width=63.3mm]{pics/presend.jpg}%
+  \end{beamercolorbox}\par%
+  \vspace*{-66.1mm}\hspace*{57.2mm}%
+}{%
+  \hspace*{58mm}%
+}%
+\begin{beamercolorbox}[ht=65.75mm,wd=63.3mm,sep=2.5mm]{framebackground}%
+\parbox[t][60.75mm]{53mm}{%
+  \tableofcontents[#1]%
+}%
+\end{beamercolorbox}\par%
+\end{frame}
+}
+
+% last frame with signature
+\newcommand{\signatureframe}[1][]{%
+\begin{frame}
+\frametitle{~}
+\ifthenelse{\boolean{UseImages}}{%
+  \hspace*{-7.5mm}%
+  \begin{beamercolorbox}[ht=65.75mm,wd=63.3mm,sep=0mm]{framebackground}%
+  %\vspace*{0.35mm}%
+  \includegraphics[width=63.3mm]{pics/presend.jpg}%
+  \end{beamercolorbox}\par%
+  \vspace*{-66.1mm}\hspace*{57.2mm}%
+}{%
+  \hspace*{58mm}%
+}%
+\begin{beamercolorbox}[ht=65.75mm,wd=63.3mm,sep=2.5mm]{framebackground}%
+\parbox[t][60.75mm]{53mm}{%
+  \scriptsize
+  \TheLicenseInformation\\%
+  
+  {\centering
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{\TheCCLicenseText{}\\[0.5\baselineskip]
+    \includegraphics[scale=0.5]{pics/cc-by-sa-gross.pdf}}\\[\baselineskip]
+  }
+  
+  \copyright{} \the\year{} \insertauthor{}\\
+  \insertmail\\[\baselineskip]
+  
+  \ifthenelse{\boolean{UseImages}}{%
+    Bilder: \copyright{} 2024 by Marc Weidner | Erzeugt mit AI (\href{https://creativecommons.org/licenses/by-sa/2.0/}{CC-BY-SA-2.0})\\%
+  }{}%
+  Inhalte und Bilder Alle Rechte vorbehalten\\
+  LaTeX Vorlage von D. Wagenfuehr angepasst von Marc Weidner
+}%
+\end{beamercolorbox}\par%
+\end{frame}
+}
+
+% copyright notice
+\newcommand*{\copytext}{\copyright{} \the\year{} \insertauthor{}. \TheRightsNotice{}
+\hfill\raisebox{-1.5px}{\href{http://creativecommons.org/licenses/by-sa/4.0/}{\includegraphics[height=6px]{pics/cc-by-sa.pdf}}}%
+}%
+
+% use Images
+\newboolean{UseImages}
+\setboolean{UseImages}{true}
+\newcommand*{\UseImages}[1]{\setboolean{UseImages}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%
+% layout
+%%%%%%%%%%%%%%%%%%%%%
+
+% color definition
+\RequirePackage{color}
+% Colors by marc
+
+\definecolor{CustomDarkBlue}{RGB}{39, 79, 127} % geschätzter dunkelblauer Wert
+\definecolor{CustomLightBlue}{RGB}{40, 178, 229} % geschätzter hellblauer Wert
+\definecolor{CustomRed}{RGB}{174, 2, 0} % rot ton 
+
+
+
+\setbeamercolor{titleframetitle}{fg=white,bg=CustomLightBlue} %presentation Subtitle
+\setbeamercolor{titleframesubtitle}{fg=white,bg=CustomDarkBlue} %presentation Title
+\setbeamercolor{titleframebackground}{fg=black,bg=CustomLightBlue!70}
+\setbeamercolor{frametitle}{fg=white,bg=CustomDarkBlue}
+\setbeamercolor{framebackground}{fg=black,bg=CustomLightBlue!40}
+\setbeamercolor{framelogo}{bg=white}
+\setbeamercolor{footer}{bg=white,fg=CustomRed}
+
+% opaque preview of further text on sheet
+\setbeamercovered{invisible}
+
+% frame and title color
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+
+% text color
+\setbeamercolor{normal text}{fg=black,bg=white}
+
+% do not use navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Setting the border left and right
+\beamersetleftmargin{7.5mm}
+\beamersetrightmargin{6mm}
+
+% title page
+\newcommand*{\UseTitleVersionOne}{%
+\usetitlepagetemplate{%
+  % Background
+  \vspace*{-53.2mm}%\hspace*{-0.55mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{-0.9mm}}%
+  \begin{beamercolorbox}[ht=57.5mm,wd=128.6mm,sep=0mm]{titleframebackground}%
+    \ifthenelse{\boolean{UseImages}}{%
+      \includegraphics[width=128.6mm]{pics/prestitle2}%
+    }{}%
+  \end{beamercolorbox}\par%
+  \vspace*{-0.35mm}\vspace*{-5.5mm}\hspace*{1.35mm}%
+  % Subtitle
+  \pgfsetfillopacity{0.65}%
+  \begin{beamercolorbox}[ht=5.5mm,wd=125mm,sep=1mm,leftskip=3mm]{titleframesubtitle}%
+  \pgfsetfillopacity{1.0}%
+  \insertsubtitle%
+  \end{beamercolorbox}\par%
+  % Title
+  \vspace*{-0.35mm}\hspace*{1.35mm}%
+  \begingroup%
+  \begin{beamercolorbox}[ht=20.5mm,wd=125mm,sep=4mm]{titleframetitle}%
+  \baselineskip20pt%
+  \textbf{{\LARGE \inserttitle}}%
+  \end{beamercolorbox}\par%
+  \endgroup%
+  % Footer
+  \vspace*{6.7mm}%\hspace*{-7.7mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{0.8mm}}%
+  \TheFooter[x]%
+  %Logo
+  \vspace*{-98.4mm}\hspace*{98.6mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{-0.1mm}}%
+  \TheLogo[width=15mm]{}%
+  }%
+}
+% Choose default
+\UseTitleVersionOne
+
+\newcommand*{\UseTitleVersionTwo}{%
+\usetitlepagetemplate{%
+  % Background
+  \vspace*{-53.5mm}%\hspace*{-0.55mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{-0.6mm}}%
+  \begin{beamercolorbox}[ht=72mm,wd=128.6mm,sep=0mm]{titleframebackground}%
+    \ifthenelse{\boolean{UseImages}}{%
+      \includegraphics[width=128.6mm]{pics/prestitle2}%
+    }{}%
+  \end{beamercolorbox}\par%
+  % Title
+  \vspace*{-20.85mm}\hspace*{1.35mm}%
+  \begingroup%
+  \pgfsetfillopacity{0.65}%
+  \begin{beamercolorbox}[ht=20.5mm,wd=125mm,sep=4mm]{titleframesubtitle}%
+  \baselineskip20pt%
+  \pgfsetfillopacity{1.0}%
+  \textbf{{\LARGE \inserttitle}}%
+  \end{beamercolorbox}\par%
+  \endgroup%
+  % Subtitle
+  \vspace*{5.15mm}\vspace*{-5.5mm}\hspace*{1.35mm}%
+  \begin{beamercolorbox}[ht=5.5mm,wd=125mm,sep=1mm,leftskip=3mm]{titleframetitle}%
+  \insertsubtitle%
+  \end{beamercolorbox}\par%
+  % Footer
+  \vspace*{7.45mm}%\hspace*{-0.0mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{0.55mm}}%
+  \TheFooter[x]%
+  %Logo
+  \vspace*{-98.4mm}\hspace*{98.6mm}%
+  \ifthenelse{\boolean{UseImages}}{}{\vspace*{-0.1mm}}%
+  \TheLogo[width=15mm]{}
+  }%
+}
+
+\newcommand*{\TheFooter}[1][]{%
+\begingroup%
+\begin{beamercolorbox}[ht=4.8mm,wd=114.5mm]{footer}%
+  \fboxsep0pt%
+  \parbox[t][7mm]{114.5mm}{%
+    \scriptsize\textbf{\copytext}\\[0.4\baselineskip]%
+    \ifthenelse{\equal{#1}{}}{%
+      \textcolor{black}{%
+        \hfill%
+        \parbox{40mm}{%
+          \raggedleft%
+          \TheTranslatedPage~\insertframenumber%
+        }%
+      }%
+    }%
+  }%
+\end{beamercolorbox}\par%
+\endgroup%
+}
+
+% footline
+\usefoottemplate{\TheFooter}
+
+% Marc logo
+\newcommand*{\insertLogo}[1][]{\includegraphics[#1]{pics/logo}}
+\newcommand*{\TheLogo}[1][]{%
+  \begin{beamercolorbox}[ht=18mm,wd=18mm,sep=1mm]{transparent}%
+  \insertLogo[#1]{}%
+  \end{beamercolorbox}\par%
+}
+
+% Frame-Titel
+\useframetitletemplate{%
+% Headline
+\vspace*{-0.35mm}%
+\begin{beamercolorbox}[ht=16.5mm,wd=128.6mm,sep=4mm,leftskip=3.5mm]{frametitle}%
+{\large \insertframetitle\vphantom{g}}
+\end{beamercolorbox}%
+%Logo
+\vspace*{-18.85mm}\hspace*{98.6mm}%
+\TheLogo[width=15mm]{}%
+\vspace*{2mm}%
+}
+
+% Table of content
+\setbeamercolor*{section in toc}{fg=black}
+\setbeamertemplate{section in toc}{%
+\raisebox{0.18mm}{\footnotesize\textcolor{CustomRed}{\textbullet}}%
+\quad\inserttocsection%
+}
+
+% Item label
+\setbeamercolor{item}{fg=CustomDarkBlue}
+\setbeamertemplate{itemize item}{\raisebox{0.18mm}{\footnotesize\textbullet}}
