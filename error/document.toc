@@ -1,0 +1,8 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Fehler 1: Beispiel}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Symptome}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Analyse}{3}{}%
+\contentsline {subsection}{\numberline {1.3}Lösungsversuch}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Ergebnis}{3}{}%
+\contentsline {section}{\numberline {2}Fehler 2: Beispiel}{3}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

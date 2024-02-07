@@ -1,0 +1,68 @@
+\documentclass{scrartcl}
+
+% Deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Seitenränder anpassen
+\usepackage{geometry}
+\geometry{a4paper, left=25mm, right=25mm, top=25mm, bottom=25mm}
+
+% Header und Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Teamcenter Version, ITL VERSION, NX VERSION
+\newcommand{\teamcenterVersion}{\textbf{Teamcenter Version: }\textit{Insert Teamcenter Version Here}}
+\newcommand{\itlVersion}{\textbf{ITL VERSION: }\textit{Insert ITL Version Here}}
+\newcommand{\nxVersion}{\textbf{NX VERSION: }\textit{Insert NX Version Here}}
+\newcommand{\inc}{\textbf{INC Number: }\textit{Insert NINC Numb here}}
+% Paket für Blindtext
+\usepackage{blindtext}
+
+\title{ \inc}
+\author{Marc Weidner}
+
+\begin{document}
+	
+	\maketitle
+	% Zusätzliche Informationen
+\vspace{15cm}
+	\begin{itemize}
+		\item \teamcenterVersion
+		\item \itlVersion
+		\item \nxVersion
+	\end{itemize}
+
+	\newpage
+	\tableofcontents
+	\newpage
+	\section{Fehler 1: Beispiel}
+	
+	\subsection{Symptome}
+	
+	Hier beschreiben Sie die Symptome des Fehlers, die Sie festgestellt haben.
+	
+	\subsection{Analyse}
+	
+	Versuchen Sie, den Fehler zu analysieren. Überlegen Sie, was vor dem Auftreten des Fehlers passiert ist, und welche möglichen Ursachen es geben könnte.
+	
+	\subsection{Lösungsversuch}
+	
+	Beschreiben Sie alle Lösungsversuche, die Sie unternommen haben, um den Fehler zu beheben.
+	
+	\subsection{Ergebnis}
+	
+	Notieren Sie das Ergebnis Ihrer Lösungsversuche. War der Fehler behoben oder nicht? Wenn nicht, was waren die Gründe dafür?
+	
+	\section{Fehler 2: Beispiel}
+	
+	Wiederholen Sie den Prozess für jeden weiteren Fehler, den Sie identifizieren.
+	
+\end{document}
