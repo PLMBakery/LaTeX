@@ -1,0 +1,75 @@
+%------------------------------------------------
+%  Erstellt von:	Marc Weidner
+%  Erstellt am: 	01.26.2027
+%  Firma:			PLMBakery
+%
+% Unterstützt von:  Marei Peischl
+%-------------------------------------------------
+
+
+\documentclass{scrartcl}
+
+%------------------------------------------------
+%  Allgemeine Pakete
+%------------------------------------------------
+\input{Definiton_u_Packages.tex}
+
+
+%------------------------------------------------
+%  Beginn Dokument und der Inhalte des Dokumentes
+%------------------------------------------------
+
+
+\begin{document}
+
+
+%------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------
+
+\begin{titlepage}
+\begingroup
+	\raggedleft
+		\includegraphics[width=6cm]{pics/plogoblue}
+		
+\vspace{3cm}
+	\textbf{{SIEMENS NX - System Administration}}\\
+	\textbf{{\small Fast | Memorable | Efficient}}
+
+
+%------------------------------------------------
+%   Document Status
+%------------------------------------------------
+\vspace{5cm}
+	Marc Weidner\\
+	{\today}\\	
+	Version: 1.0\\
+	Working\\
+	\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	\par
+\endgroup
+
+\vspace{4cm}
+{\tiny © Copyright PLMBakery – Changes and errors reserved. All rights reserved. No part of this work may be reproduced, processed, duplicated, or distributed in any form (print, photocopy, microfilm, or any other method) without the written permission of PLMBakery. Most software and hardware designations used in this work are also registered trademarks and are subject to legal provisions.}
+\end{titlepage}
+
+%------------------------------------------------
+%   Inhaltsverzeichnis
+%------------------------------------------------
+	
+\tableofcontents
+	\pagebreak
+
+%------------------------------------------------
+%    Abbildungsverzeichnis
+%------------------------------------------------
+
+\listoffigures
+
+%------------------------------------------------
+%   Kapitel werden eingefügt über die Datei kapitel.tex diese wird hier angezogen
+%------------------------------------------------
+\input{Kapitel.tex}
+
+
+\end{document}

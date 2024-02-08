@@ -1,0 +1,60 @@
+%------------------------------------------------
+%  Erstellt von:	Marc Weidner
+%  Erstellt am: 	008.02.2024
+%-------------------------------------------------
+\documentclass[a4paper, 10pt]{scrartcl} % KOMA-Script Article-Klasse
+%------------------------------------------------
+% Einbinden der Stil-Datei
+%------------------------------------------------
+\usepackage{ArtRedBlue}
+%------------------------------------------------
+%  Beginn Dokument und der Inhalte des Dokumentes
+%------------------------------------------------
+\begin{document}
+	%------------------------------------------------
+	%	TITLE PAGE
+	%------------------------------------------------
+	
+	\begin{titlepage}
+		\begingroup
+		\raggedleft
+		\includegraphics[width=6cm]{pics/logo}
+		
+		\vspace{3cm}
+		\textbf{{SIEMENS NX - System Administration}}\\
+		\textbf{{\small Fast | Memorable | Efficient}}
+		
+		
+		%------------------------------------------------
+		%   Document Status
+		%------------------------------------------------
+		\vspace{10cm}
+		Marc Weidner\\
+		{\today}\\	
+		Version: 1.0\\
+		Working\\
+		\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+		\par
+		\endgroup
+	\end{titlepage}
+	
+	%------------------------------------------------
+	%   Inhaltsverzeichnis
+	%------------------------------------------------
+	
+	\tableofcontents
+	\pagebreak
+	
+	%------------------------------------------------
+	%    Abbildungsverzeichnis
+	%------------------------------------------------
+	
+	\listoffigures
+	
+	%------------------------------------------------
+	%   Kapitel werden eingefügt über die Datei kapitel.tex diese wird hier angezogen
+	%------------------------------------------------
+	\input{einfuehrung.tex}
+	
+	
+\end{document}
