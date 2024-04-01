@@ -1,97 +1,105 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.10)  31 DEC 2023 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.29)  27 MAR 2024 08:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./LinuxDocuTemplateBlogMain.tex
 (LinuxDocuTemplateBlogMain.tex
-LaTeX2e <2023-11-01>
-L3 programming layer <2023-11-01>
-(D:\Software_Marc\MikTex\tex/latex/base\article.cls
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(D:\Software_Marc\MikTex\tex/latex/base\size10.clo
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(D:\Software_Marc\MikTex\tex/latex/listings\listings.sty
-(D:\Software_Marc\MikTex\tex/latex/graphics\keyval.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
+y
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-\lst@mode=\count194
+\lst@mode=\count195
 \lst@gtempboxa=\box51
 \lst@token=\toks18
-\lst@length=\count195
+\lst@length=\count196
 \lst@currlwidth=\dimen141
-\lst@column=\count196
-\lst@pos=\count197
+\lst@column=\count197
+\lst@pos=\count198
 \lst@lostspace=\dimen142
 \lst@width=\dimen143
-\lst@newlines=\count198
-\lst@lineno=\count199
+\lst@newlines=\count199
+\lst@lineno=\count266
 \lst@maxwidth=\dimen144
 
-(D:\Software_Marc\MikTex\tex/latex/listings\lstmisc.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count266
-\lst@skipnumbers=\count267
+\c@lstnumber=\count267
+\lst@skipnumbers=\count268
 \lst@framebox=\box52
 )
-(D:\Software_Marc\MikTex\tex/latex/listings\listings.cfg
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
+g
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
-(D:\Software_Marc\MikTex\tex/latex/graphics\graphicx.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\Software_Marc\MikTex\tex/latex/graphics\graphics.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(D:\Software_Marc\MikTex\tex/latex/graphics\trig.sty
+ (C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(D:\Software_Marc\MikTex\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(D:\Software_Marc\MikTex\tex/latex/graphics-def\pdftex.def
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen145
 \Gin@req@width=\dimen146
 )
-(D:\Software_Marc\MikTex\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(D:\Software_Marc\MikTex\tex/latex/graphics-cfg\color.cfg
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(D:\Software_Marc\MikTex\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.l
+tx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(D:\Software_Marc\MikTex\tex/latex/fancybox\fancybox.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.st
+y
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -104,18 +112,18 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks22
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
-) (D:\Software_Marc\MikTex\tex/latex/geometry\geometry.sty
+)
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
+y
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(D:\Software_Marc\MikTex\tex/generic/iftex\ifvtex.sty
+ (C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(D:\Software_Marc\MikTex\tex/generic/iftex\iftex.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
+\Gm@cnth=\count269
+\Gm@cntv=\count270
+\c@Gm@tempcnt=\count271
 \Gm@bindingoffset=\dimen148
 \Gm@wd@mp=\dimen149
 \Gm@odd@mp=\dimen150
@@ -126,22 +134,26 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks23
 
-(D:\Software_Marc\MikTex\tex/latex/geometry\geometry.cfg))
-(D:\Software_Marc\MikTex\tex/latex/ccicons\ccicons.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cf
+g))
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/ccicons\ccicons.sty
 Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
 
-(D:\Software_Marc\MikTex\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(D:\Software_Marc\MikTex\tex/generic/xkeyval\xkeyval.tex
-(D:\Software_Marc\MikTex\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.te
+x
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.t
+ex
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 )
-\XKV@depth=\count271
+\XKV@depth=\count272
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-(D:\Software_Marc\MikTex\tex/latex/fancyhdr\fancyhdr.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
+y
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip50
@@ -154,101 +166,110 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@olf=\skip57
 \f@nch@O@orf=\skip58
 )
-(D:\Software_Marc\MikTex\tex/latex/datetime\datetime.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.st
+y
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(D:\Software_Marc\MikTex\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
+y
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count272
+\etb@tempcnta=\count273
 )
-(D:\Software_Marc\MikTex\tex/latex/fmtcount\fmtcount.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.st
+y
 Package: fmtcount 2020/01/30 v3.07
-
-(D:\Software_Marc\MikTex\tex/latex/base\ifthen.sty
+ (C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(D:\Software_Marc\MikTex\tex/latex/fmtcount\fcprefix.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.st
+y
 Package: fcprefix 2012/09/28
 
-(D:\Software_Marc\MikTex\tex/latex/fmtcount\fcnumparser.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser
+.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count273
+\fc@digit@counter=\count274
 ))
-(D:\Software_Marc\MikTex\tex/latex/amsmath\amsgen.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
 \ex@=\dimen156
 )
-\c@padzeroesN=\count274
-\fc@tmpcatcode=\count275
-\@DT@modctr=\count276
-\@ordinalctr=\count277
-\@orgargctr=\count278
-\@strctr=\count279
-\@tmpstrctr=\count280
-\@DT@loopN=\count281
-\@DT@X=\count282
+\c@padzeroesN=\count275
+\fc@tmpcatcode=\count276
+\@DT@modctr=\count277
+\@ordinalctr=\count278
+\@orgargctr=\count279
+\@strctr=\count280
+\@tmpstrctr=\count281
+\@DT@loopN=\count282
+\@DT@X=\count283
 )
-(D:\Software_Marc\MikTex\tex/latex/datetime\datetime-defaults.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-de
+faults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count283
-\@month=\count284
-\@year=\count285
-\c@HOUR=\count286
-\c@HOURXII=\count287
-\c@MINUTE=\count288
-\c@TOHOUR=\count289
-\c@TOMINUTE=\count290
-\c@SECOND=\count291
-\currenthour=\count292
-\currentminute=\count293
-\currentsecond=\count294
+\@day=\count284
+\@month=\count285
+\@year=\count286
+\c@HOUR=\count287
+\c@HOURXII=\count288
+\c@MINUTE=\count289
+\c@TOHOUR=\count290
+\c@TOMINUTE=\count291
+\c@SECOND=\count292
+\currenthour=\count293
+\currentminute=\count294
+\currentsecond=\count295
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count295
-\dayofyear=\count296
-\dayofweek=\count297
+\@dtctr=\count296
+\dayofyear=\count297
+\dayofweek=\count298
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks27
 \dt@b=\toks28
 )
-(D:\Software_Marc\MikTex\tex/generic/babel\babel.sty
-Package: babel 2023/10/25 v3.96 The Babel package
-\babel@savecnt=\count298
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count299
 \U@D=\dimen157
 \l@unhyphenated=\language79
 
-(D:\Software_Marc\MikTex\tex/generic/babel\txtbabel.def)
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
+)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count299
+\bbl@dirlevel=\count300
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(D:\Software_Marc\MikTex\tex/latex/arabi\bblopts.cfg
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(D:\Software_Marc\MikTex\tex/latex/babel-german\german.ldf
-Language: german 2021/02/27 v2.13 German support for babel (pre-1996 orthograph
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\german.
+ldf
+Language: german 2024/01/19 v2.14 German support for babel (pre-1996 orthograph
 y)
 
-(D:\Software_Marc\MikTex\tex/latex/babel-german\germanb.ldf
-Language: germanb 2021/02/27 v2.13 German support for babel (pre-1996 orthograp
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germanb
+.ldf
+Language: germanb 2024/01/19 v2.14 German support for babel (pre-1996 orthograp
 hy)
 Package babel Info: Making " an active character on input line 139.
 )))
-(D:\Software_Marc\MikTex\tex/generic/babel/locale/de\babel-german.tex
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\ba
+bel-german.tex
 Package babel Info: Importing font and identification data for german
 (babel)             from babel-de-1901.ini. Reported on input line 25.
 )
-(D:\Software_Marc\MikTex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count300
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box55
-)
-No file LinuxDocuTemplateBlogMain.aux.
+) (LinuxDocuTemplateBlogMain.aux)
 \openout1 = `LinuxDocuTemplateBlogMain.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -265,42 +286,52 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
-\c@lstlisting=\count301
-(D:\Software_Marc\MikTex\tex/context/base/mkii\supp-pdf.mkii
+\c@lstlisting=\count302
+
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
+\scratchcounter=\count303
 \scratchdimen=\dimen158
 \scratchbox=\box56
-\nofMPsegments=\count303
-\nofMParguments=\count304
+\nofMPsegments=\count304
+\nofMParguments=\count305
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count305
+\MPscratchCnt=\count306
 \MPscratchDim=\dimen159
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
 \everyMPtoPDFconversion=\toks30
-) (D:\Software_Marc\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-(D:\Software_Marc\MikTex\tex/generic/infwarerr\infwarerr.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
+r.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(D:\Software_Marc\MikTex\tex/latex/grfext\grfext.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(D:\Software_Marc\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
+inekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(D:\Software_Marc\MikTex\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
+sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(D:\Software_Marc\MikTex\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
+y
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(D:\Software_Marc\MikTex\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.
+sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-(D:\Software_Marc\MikTex\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
+mds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -314,7 +345,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(D:\Software_Marc\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
+s.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
@@ -360,13 +392,17 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 (Font)              scaled to size 24.88pt on input line 63.
 [1
 
-{C:/Users/weidner/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/
-logo.png>]
-No file LinuxDocuTemplateBlogMain.toc.
+{C:/Users/z004rxsw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures
+/logo.png>] (LinuxDocuTemplateBlogMain.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `LinuxDocuTemplateBlogMain.toc'.
 
-[1]
+ [1]
 
 ! LaTeX Error: File `figures/01' not found.
 
@@ -381,16 +417,18 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(D:\Software_Marc\MikTex\tex/latex/listings\lstlang1.sty
+
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-(D:\Software_Marc\MikTex\tex/latex/listings\lstlang1.sty
+(C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 96.
-
-(D:\Software_Marc\MikTex\tex/latex/base\ts1cmtt.fd
+ (C:\Users\z004rxsw\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 98--102
@@ -533,44 +571,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
-[5]
-No file LinuxDocuTemplateBlogMain.lol.
+[5] (LinuxDocuTemplateBlogMain.lol)
 \tf@lol=\write5
 \openout5 = `LinuxDocuTemplateBlogMain.lol'.
 
-[6]
-No file LinuxDocuTemplateBlogMain.lof.
+ [6] (LinuxDocuTemplateBlogMain.lof)
 \tf@lof=\write6
 \openout6 = `LinuxDocuTemplateBlogMain.lof'.
 
+
 [7] (LinuxDocuTemplateBlogMain.aux)
  ***********
-LaTeX2e <2023-11-01>
-L3 programming layer <2023-11-01>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7768 strings out of 474591
- 120438 string characters out of 5755620
- 1941533 words of memory out of 5000000
- 29849 multiletter control sequences out of 15000+600000
- 560848 words of font info for 47 fonts, out of 8000000 for 9000
+ 7789 strings out of 474541
+ 125164 string characters out of 5743009
+ 1940978 words of memory out of 5000000
+ 29911 multiletter control sequences out of 15000+600000
+ 561156 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,11n,99p,1035b,1391s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\weidner\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-tt0800.pk><D:/Software_Marc/MikTex/fonts/type1/public/ccicons/ccicons.pfb><D:/S
-oftware_Marc/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Software_Marc
-/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Software_Marc/MikTex/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><D:/Software_Marc/MikTex/fonts/type1/public
-/amsfonts/cm/cmr5.pfb><D:/Software_Marc/MikTex/fonts/type1/public/amsfonts/cm/c
-mtt10.pfb><D:/Software_Marc/MikTex/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on LinuxDocuTemplateBlogMain.pdf (8 pages, 1172594 bytes).
+ <C:\Users\z004rxsw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
+ctt0800.pk><C:/Users/z004rxsw/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+ccicons/ccicons.pfb><C:/Users/z004rxsw/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb><C:/Users/z004rxsw/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/z004rxsw/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/z004rxsw/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/z00
+4rxsw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
+/Users/z004rxsw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb><C:/Users/z004rxsw/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmtt8.pfb>
+Output written on LinuxDocuTemplateBlogMain.pdf (8 pages, 1187798 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
