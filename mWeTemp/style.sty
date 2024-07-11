@@ -1,0 +1,40 @@
+\ProvidesPackage{style}
+
+% Use necessary packages
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+% Page geometry
+\geometry{a4paper, margin=1in}
+
+% Header style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{gray}{\Huge\textbf{PUT YOUR TITLE HERE}}} % Titel im Header links
+
+% Title page command
+\newcommand{\maketitlepage}{
+	\begin{titlepage}
+		\centering
+		\vspace*{2cm} % Abstand von oben
+		
+		\includegraphics[width=0.8\textwidth]{example-image} \\ % Beispielbild für den Titel
+		\vspace{2cm}
+		
+		{\LARGE\textbf{YOUR SUBTITLE HERE}} \\
+		\vspace{0.5cm}
+		
+		{\large\textbf{feel free to add whatever you want here}} \\
+		\vfill
+		
+		\includegraphics[width=0.2\textwidth]{example-image-a} \\ % Logo
+		\vspace{0.5cm}
+		
+		{\LARGE\textbf{YOUR NAME HERE}} \\
+		
+		\vspace{1cm}
+		
+	\end{titlepage}
+}
