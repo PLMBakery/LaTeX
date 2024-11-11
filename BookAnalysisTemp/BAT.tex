@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath} % Für mathematische Formeln
+\usepackage{graphicx} % Für Bilder
+\usepackage{float} % Für Platzierung von Bildern und Diagrammen
+\usepackage{caption}
+\usepackage{multicol} % Für zweispaltiges Layout
+\usepackage{geometry} % Für Seiteneinstellungen
+\usepackage{fancyhdr} % Für Kopf- und Fußzeilen
+\usepackage{hyperref} % Für Inhaltsverzeichnis-Verlinkungen
+\usepackage{wrapfig}
+
+% just to make this example:
+\usepackage{lipsum}
+\usepackage{mwe}
+% Seiteneinstellungen
+\geometry{a4paper, left=25mm, right=25mm, top=20mm, bottom=20mm}
+% Kopf- und Fußzeilen
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+% Dokumentbeginn
+\begin{document}
+	
+% Deckblatt
+	\begin{titlepage}
+		\centering
+		{\LARGE Meine wissenschaftliche Arbeit}\par
+		\vspace{2cm}
+		{\Large Vorname Nachname}\par
+		\vspace{1cm}
+		{\large Datum: \today}\par
+		\vspace{3cm}
+		\vfill
+		{\large Zusammenfassung der Notizen}\par
+\end{titlepage}
+			
+% Inhaltsverzeichnis
+	\tableofcontents
+	\newpage
+	
+	
+% Mathematische Formel
+\section{Mathematische Formeln}
+Hier ist eine Beispielgleichung:
+\begin{equation}
+	E = mc^2
+\end{equation}
+
+\section{Two Pictures}
+
+\begin{figure}[h]
+	\includegraphics[width=.45\textwidth]{example-image-a}
+	\hfill
+	\includegraphics[width=.45\textwidth]{example-image-b}
+\end{figure}
+
+\section{Text besides Figure}
+
+\lipsum[1]
+
+\begin{wrapfigure}{l}{0cm}
+	\includegraphics[width=.3\textwidth]{example-image}
+\end{wrapfigure}
+
+\lipsum[1]
+\end{document}

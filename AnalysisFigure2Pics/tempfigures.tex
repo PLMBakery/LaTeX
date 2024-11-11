@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% just to make this example:
+\usepackage{lipsum}
+\usepackage{mwe}
+
+\begin{document}
+	
+	\section{Two Pictures}
+	
+	\begin{figure}[h]
+		\includegraphics[width=.45\textwidth]{example-image-a}
+		\hfill
+		\includegraphics[width=.45\textwidth]{example-image-b}
+	\end{figure}
+	
+	\section{Text besides Figure}
+	
+	\lipsum[1]
+	
+	\begin{wrapfigure}{l}{0cm}
+		\includegraphics[width=.3\textwidth]{example-image}
+	\end{wrapfigure}
+	
+	\lipsum[1]
+\end{document}

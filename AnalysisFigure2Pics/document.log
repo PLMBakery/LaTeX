@@ -1,0 +1,185 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.25)  11 NOV 2024 09:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./document.tex
+(document.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-30>
+(C:\SwMw\MikTex\tex/latex/base\article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(C:\SwMw\MikTex\tex/latex/base\size10.clo
+File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(C:\SwMw\MikTex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\SwMw\MikTex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\SwMw\MikTex\tex/latex/graphics\graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\SwMw\MikTex\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\SwMw\MikTex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\SwMw\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+)
+(C:\SwMw\MikTex\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen144
+\WF@size=\dimen145
+\c@WF@wrappedlines=\count268
+\WF@box=\box52
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\SwMw\MikTex\tex/latex/lipsum\lipsum.sty
+(C:\SwMw\MikTex\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+(C:\SwMw\MikTex\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-08-30 L3 programming layer (loader) 
+
+(C:\SwMw\MikTex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count269
+\l__pdf_internal_box=\box53
+))
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count270
+\l__lipsum_a_int=\count271
+\l__lipsum_b_int=\count272
+
+(C:\SwMw\MikTex\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\SwMw\MikTex\tex/latex/mwe\mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+
+(C:\SwMw\MikTex\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(C:\SwMw\MikTex\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count273
+\c@Blindtext=\count274
+\c@blind@countparstart=\count275
+\blind@countxx=\count276
+\blindtext@numBlindtext=\count277
+\blind@countyy=\count278
+\c@blindlist=\count279
+\c@blindlistlevel=\count280
+\c@blindlist@level=\count281
+\blind@listitem=\count282
+\c@blind@listcount=\count283
+\c@blind@levelcount=\count284
+\blind@mathformula=\count285
+\blind@Mathformula=\count286
+\c@blind@randomcount=\count287
+\c@blind@randommax=\count288
+\c@blind@pangramcount=\count289
+\c@blind@pangrammax=\count290
+)) (document.aux)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+(C:\SwMw\MikTex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count291
+\scratchdimen=\dimen146
+\scratchbox=\box54
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen147
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks20
+) (C:\SwMw\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\SwMw\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<example-image-a.pdf, id=1, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 14.
+(pdftex.def)             Requested size: 155.24895pt x 116.43936pt.
+<example-image-b.pdf, id=2, 321.2pt x 240.9pt>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 16.
+(pdftex.def)             Requested size: 155.24895pt x 116.43936pt.
+<example-image.pdf, id=3, 321.2pt x 240.9pt>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 24.
+(pdftex.def)             Requested size: 103.50105pt x 77.62624pt.
+
+
+[1
+
+{C:/Users/z004rxsw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <C:/SwMw/M
+ikTex/tex/latex/mwe/example-image-a.pdf> <C:/SwMw/MikTex/tex/latex/mwe/example-
+image-b.pdf> <C:/SwMw/MikTex/tex/latex/mwe/example-image.pdf>] (document.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-30>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 2031 strings out of 473899
+ 36605 string characters out of 5740560
+ 510027 words of memory out of 5000000
+ 24921 multiletter control sequences out of 15000+600000
+ 558674 words of font info for 38 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 79i,6n,93p,230b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/SwMw/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/SwMw/MikTex/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/SwMw/MikTex/fonts/type1/public/lm/lms
+s17.pfb>
+Output written on document.pdf (1 page, 52324 bytes).
+PDF statistics:
+ 34 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

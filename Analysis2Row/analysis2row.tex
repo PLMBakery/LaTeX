@@ -1,0 +1,80 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath} % Für mathematische Formeln
+\usepackage{graphicx} % Für Bilder
+\usepackage{float} % Für Platzierung von Bildern und Diagrammen
+\usepackage{caption}
+\usepackage{multicol} % Für zweispaltiges Layout
+\usepackage{geometry} % Für Seiteneinstellungen
+\usepackage{fancyhdr} % Für Kopf- und Fußzeilen
+\usepackage{hyperref} % Für Inhaltsverzeichnis-Verlinkungen
+
+% Seiteneinstellungen
+\geometry{a4paper, left=25mm, right=25mm, top=20mm, bottom=20mm}
+
+% Kopf- und Fußzeilen
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+
+% Dokumentbeginn
+\begin{document}
+	
+	% Deckblatt
+	\begin{titlepage}
+		\centering
+		{\LARGE Meine wissenschaftliche Arbeit}\par
+		\vspace{2cm}
+		{\Large Vorname Nachname}\par
+		\vspace{1cm}
+		{\large Datum: \today}\par
+		\vspace{3cm}
+		\vfill
+		{\large Zusammenfassung der Notizen}\par
+	\end{titlepage}
+	
+	% Inhaltsverzeichnis
+	\tableofcontents
+	\newpage
+	
+	% Zweispaltiger Text
+	\begin{multicols}{2}
+		
+		% Einleitung
+		\section{Einleitung}
+		Hier beginnt der Text deiner Arbeit. Dies ist ein Beispiel für einen zweispaltigen Abschnitt.
+		
+		% Bild einfügen
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.45\textwidth]{example-image-a}
+			\caption{Beispielbild}
+			\label{fig:beispiel}
+		\end{figure}
+		
+		% Mathematische Formel
+		\section{Mathematische Formeln}
+		Hier ist eine Beispielgleichung:
+		\begin{equation}
+			E = mc^2
+		\end{equation}
+		
+		% Diagramm einfügen
+		\section{Diagramme}
+		Diagramme können als Bilder oder mit einem Tool wie TikZ eingefügt werden. Hier ist ein einfaches Beispiel:
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.45\textwidth]{example-image-b}
+			\caption{Beispieldiagramm}
+			\label{fig:diagramm}
+		\end{figure}
+		
+		% Zusammenfassung
+		\section{Zusammenfassung}
+		Hier kommt die Zusammenfassung deiner Notizen hin.
+		
+	\end{multicols}
+	
+\end{document}
