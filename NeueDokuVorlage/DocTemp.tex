@@ -1,0 +1,76 @@
+%------------------------------------------------
+%  Erstellt von:	Marc Weidner
+%  Erstellt am: 	26.02.2025
+%  Version:			1.0.1	
+%
+%
+%-------------------------------------------------
+
+
+\documentclass{scrartcl}
+
+%------------------------------------------------
+%  Allgemeine Pakete
+%------------------------------------------------
+\input{Definiton_u_Packages.tex}
+
+
+%------------------------------------------------
+%  Beginn Dokument und der Inhalte des Dokumentes
+%------------------------------------------------
+
+
+\begin{document}
+
+
+%------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------
+
+\begin{titlepage}
+	\begingroup
+	\raggedright
+	\textbf{{\LARGE Documentation Template}}\\
+	\textbf{{\small Fast | Memorable | Efficient}}
+	\endgroup
+	
+	\vfill
+	
+	\begin{center}
+		\includegraphics[width=16cm]{pics/logo} % Bildgröße anpassen
+	\end{center}
+	
+	\vfill
+	
+	\begin{flushright}
+		Marc Weidner\\
+		\today\\    
+		Version: 1.0\\
+		Working\\
+		\rule{0.2\linewidth}{1pt} % Horizontale Linie
+	\end{flushright}
+	
+\end{titlepage}
+
+
+
+%------------------------------------------------
+%   Inhaltsverzeichnis
+%------------------------------------------------
+	
+\tableofcontents
+	\pagebreak
+
+%------------------------------------------------
+%    Abbildungsverzeichnis
+%------------------------------------------------
+
+\listoffigures
+
+%------------------------------------------------
+%   Kapitel werden eingefügt über die Datei kapitel.tex diese wird hier angezogen
+%------------------------------------------------
+\input{Kapitel.tex}
+
+
+\end{document}

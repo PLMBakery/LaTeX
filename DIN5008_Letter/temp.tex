@@ -1,0 +1,50 @@
+\documentclass[
+11pt,
+a4paper,
+parskip=half,
+DIV=10
+]{scrlttr2}
+
+% Additional packages for fine-tuning
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Set sender information
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterstraße 17\\12345 Musterstadt}
+\setkomavar{fromphone}{+49 (0) 111 0000000}
+\setkomavar{fromemail}{mail@example.com}
+\setkomavar{frombank}{Musterbank AG\\IBAN: DE00 0000 0000 0000 0000 00\\BIC: MUBADEAB000}
+
+% Recipient information (example)
+\setkomavar{toname}{Erika Mustermann}
+\setkomavar{toaddress}{Hauptstraße 1\\12345 Musterdorf}
+
+% Subject line
+\setkomavar{subject}{Betreff}
+
+% Date
+\date{30. Juni 2020}
+
+\begin{document}
+	
+	\begin{letter}{%
+			Erika Mustermann\\
+			Hauptstraße 1\\
+			12345 Musterdorf
+		}
+		
+		\opening{Sehr geehrte Damen und Herren,}
+		
+		Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla.
+		
+		\closing{Mit freundlichen Grüßen}
+		
+		\ps{P.S.: Dies ist ein Beispieltext.} % Optional postscript
+		
+		\encl{Liste der Anhänge} % Optional enclosures
+		
+	\end{letter}
+	
+\end{document}
