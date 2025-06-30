@@ -1,0 +1,89 @@
+%------------------------------------------------
+%  Erstellt von:	Marc Weidner
+%-------------------------------------------------
+
+
+\documentclass[ngerman, parskip=half*]{scrartcl}
+%------------------------------------------------
+%  Allgemeine Pakete
+%------------------------------------------------
+\input{Definiton_u_Packages.tex}
+
+
+%------------------------------------------------
+%  Beginn Dokument und der Inhalte des Dokumentes
+%------------------------------------------------
+
+
+\begin{document}
+
+
+%------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------
+
+\begin{titlepage}
+\begingroup
+	\raggedright
+		\includegraphics[width=2cm]{pics/logomwe}
+		
+\vspace{3cm}
+{\huge \textbf{NX Docu}}\\
+NX Routing: Elektrisch
+
+
+%------------------------------------------------
+%   Document Status
+%------------------------------------------------
+\vspace{5cm}
+	NX Rotuing\\
+	{\today}\\	
+	Version: 1.0.0.0\\
+	In Arbeit\\
+	\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	\par
+\endgroup
+
+\vspace{2cm}
+
+
+\begin{eintrag}{
+		\includegraphics[width=5cm,frame]{pics/cc}\captionof{figure}{Creative Commons License}}	
+	This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+\end{eintrag}
+
+\end{titlepage}
+
+%------------------------------------------------
+%   Inhaltsverzeichnis
+%------------------------------------------------
+	
+\tableofcontents
+	\pagebreak
+%------------------------------------------------
+%    Änderungshistorie
+%------------------------------------------------
+\section{Historie}
+\begin{tabularx}{1\textwidth}{@{}|l|X|X|X|X|@{}}
+	\hline
+	\rowcolor{lightgray}\textbf{}Datum & Version & Kommentar & Firma (Name) \\ \hline
+	 \today & 1.0 & Erstellung & Marc Weidner \\ \hline
+	 & & & \\ \hline
+	 & & & \\ \hline
+	 & & & \\ \hline
+	 & & & \\ \hline
+\end{tabularx}	
+
+%------------------------------------------------
+%    Abbildungsverzeichnis
+%------------------------------------------------
+\clearpage
+\listoffigures
+
+%------------------------------------------------
+%   Kapitel werden eingefügt über die Datei kapitel.tex diese wird hier angezogen
+%------------------------------------------------
+\input{Kapitel.tex}
+
+
+\end{document}
